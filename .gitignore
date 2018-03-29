@@ -6,3 +6,6 @@
 *.launch
 .settings/
 *.sublime-workspace
+
+# other
+points.log
