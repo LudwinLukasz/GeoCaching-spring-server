@@ -1,0 +1,86 @@
+2018-03-29 19:46:13.219  INFO 16412 --- [main] pl.ll.geocaching.GeoApplication          : Starting GeoApplication on DESKTOP-VOLMA76 with PID 16412 (D:\luk\angular\geocaching_server\target\classes started by arabk in D:\luk\angular\geocaching_server)
+2018-03-29 19:46:13.226  INFO 16412 --- [main] pl.ll.geocaching.GeoApplication          : No active profile set, falling back to default profiles: default
+2018-03-29 19:46:13.431  INFO 16412 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@f0f2775: startup date [Thu Mar 29 19:46:13 CEST 2018]; root of context hierarchy
+2018-03-29 19:46:17.375  INFO 16412 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5df21ac1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-29 19:46:19.029  INFO 16412 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-03-29 19:46:19.055  INFO 16412 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-29 19:46:19.057  INFO 16412 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-29 19:46:19.378  INFO 16412 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-29 19:46:19.378  INFO 16412 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5955 ms
+2018-03-29 19:46:19.728  INFO 16412 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-29 19:46:19.735  INFO 16412 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-29 19:46:19.736  INFO 16412 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-29 19:46:19.736  INFO 16412 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-29 19:46:19.736  INFO 16412 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-29 19:46:27.783  INFO 16412 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 19:46:27.827  INFO 16412 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 19:46:28.096  INFO 16412 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 19:46:28.098  INFO 16412 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 19:46:28.100  INFO 16412 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 19:46:28.198  INFO 16412 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 19:46:28.601  INFO 16412 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 19:46:30.376  INFO 16412 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 19:46:31.546  INFO 16412 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@f0f2775: startup date [Thu Mar 29 19:46:13 CEST 2018]; root of context hierarchy
+2018-03-29 19:46:31.895  INFO 16412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/point/{id}],methods=[PUT]}" onto public void pl.ll.geocaching.api.GeoRESTController.putPoint(pl.ll.geocaching.model.Point,java.lang.Long) throws java.lang.IllegalAccessException
+2018-03-29 19:46:31.907  INFO 16412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/points],methods=[GET]}" onto public java.util.List<pl.ll.geocaching.model.Point> pl.ll.geocaching.api.GeoRESTController.getAllPoints()
+2018-03-29 19:46:31.910  INFO 16412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/point],methods=[POST]}" onto public void pl.ll.geocaching.api.GeoRESTController.savePoint(pl.ll.geocaching.model.Point) throws java.lang.IllegalAccessException
+2018-03-29 19:46:31.911  INFO 16412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/point/{id}],methods=[DELETE]}" onto public void pl.ll.geocaching.api.GeoRESTController.deletePoint(java.lang.Long) throws java.lang.IllegalAccessException
+2018-03-29 19:46:31.915  INFO 16412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 19:46:31.916  INFO 16412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 19:46:31.983  INFO 16412 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 19:46:31.983  INFO 16412 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 19:46:32.056  INFO 16412 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 19:46:32.693  INFO 16412 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-29 19:46:33.045  INFO 16412 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-03-29 19:46:33.058  INFO 16412 --- [main] pl.ll.geocaching.GeoApplication          : Started GeoApplication in 21.813 seconds (JVM running for 22.984)
+2018-03-29 19:47:25.445  INFO 16412 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-29 19:47:25.448  INFO 16412 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-29 19:47:25.525  INFO 16412 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 76 ms
+2018-03-29 19:47:25.652  INFO 16412 --- [http-nio-8080-exec-1] pl.ll.geocaching.api.GeoRESTController   : Full points list requested
+2018-03-29 19:47:25.939  INFO 16412 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-29 19:47:35.850  INFO 16412 --- [http-nio-8080-exec-2] pl.ll.geocaching.api.GeoRESTController   : Full points list requested
+2018-03-29 19:49:04.759  INFO 8836 --- [main] pl.ll.geocaching.GeoApplication          : Starting GeoApplication on DESKTOP-VOLMA76 with PID 8836 (D:\luk\angular\geocaching_server\target\classes started by arabk in D:\luk\angular\geocaching_server)
+2018-03-29 19:49:04.765  INFO 8836 --- [main] pl.ll.geocaching.GeoApplication          : No active profile set, falling back to default profiles: default
+2018-03-29 19:49:05.056  INFO 8836 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@f0f2775: startup date [Thu Mar 29 19:49:04 CEST 2018]; root of context hierarchy
+2018-03-29 19:49:07.642  INFO 8836 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6effe2ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-29 19:49:08.733  INFO 8836 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-03-29 19:49:08.759  INFO 8836 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-29 19:49:08.761  INFO 8836 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-29 19:49:09.017  INFO 8836 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-29 19:49:09.017  INFO 8836 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4128 ms
+2018-03-29 19:49:09.339  INFO 8836 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-29 19:49:09.346  INFO 8836 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-29 19:49:09.347  INFO 8836 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-29 19:49:09.347  INFO 8836 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-29 19:49:09.347  INFO 8836 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-29 19:49:17.337  INFO 8836 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-29 19:49:17.369  INFO 8836 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-29 19:49:17.512  INFO 8836 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-29 19:49:17.514  INFO 8836 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-29 19:49:17.517  INFO 8836 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-29 19:49:17.609  INFO 8836 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-29 19:49:17.972  INFO 8836 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-29 19:49:19.061  INFO 8836 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-29 19:49:20.261  INFO 8836 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@f0f2775: startup date [Thu Mar 29 19:49:04 CEST 2018]; root of context hierarchy
+2018-03-29 19:49:20.431  INFO 8836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/points],methods=[GET]}" onto public java.util.List<pl.ll.geocaching.model.Point> pl.ll.geocaching.api.GeoRESTController.getAllPoints()
+2018-03-29 19:49:20.434  INFO 8836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/point/{id}],methods=[PUT]}" onto public void pl.ll.geocaching.api.GeoRESTController.putPoint(pl.ll.geocaching.model.Point,java.lang.Long) throws java.lang.IllegalAccessException
+2018-03-29 19:49:20.439  INFO 8836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/point],methods=[POST]}" onto public void pl.ll.geocaching.api.GeoRESTController.savePoint(pl.ll.geocaching.model.Point) throws java.lang.IllegalAccessException
+2018-03-29 19:49:20.440  INFO 8836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/point/{id}],methods=[DELETE]}" onto public void pl.ll.geocaching.api.GeoRESTController.deletePoint(java.lang.Long) throws java.lang.IllegalAccessException
+2018-03-29 19:49:20.444  INFO 8836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-29 19:49:20.445  INFO 8836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-29 19:49:20.539  INFO 8836 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 19:49:20.540  INFO 8836 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 19:49:20.681  INFO 8836 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-29 19:49:21.198  INFO 8836 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-29 19:49:21.308  INFO 8836 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-03-29 19:49:21.321  INFO 8836 --- [main] pl.ll.geocaching.GeoApplication          : Started GeoApplication in 17.169 seconds (JVM running for 18.312)
+2018-03-29 19:50:38.470  INFO 8836 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-29 19:50:38.470  INFO 8836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-29 19:50:38.559  INFO 8836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 88 ms
+2018-03-29 19:50:38.815  INFO 8836 --- [http-nio-8080-exec-1] pl.ll.geocaching.api.GeoRESTController   : Point edited 37
+2018-03-29 19:50:48.855  INFO 8836 --- [http-nio-8080-exec-2] pl.ll.geocaching.api.GeoRESTController   : Full points list requested
+2018-03-29 19:50:49.041  INFO 8836 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
